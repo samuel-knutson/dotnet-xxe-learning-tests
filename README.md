@@ -35,8 +35,8 @@ I tested three versions: .NET Framework 4.5.1 and 4.5.2 (to reproduce deanf1's r
 | XPathNavigatorTest: IsSafeByDefault | No | Yes | Yes |
 | XPathNavigatorTest: IsSafeWithXmlReader | Yes | Yes | Yes |
 | XmlDictionaryReaderTest: IsSafeByDefault | Yes | Yes | Yes |
-| XmlDictionaryReaderTest: IsSafeWithDtdProcessing | No | No | No |
-| XmlDictionaryReaderTest: IsSafeWithDtdProcessingAndUrlResolver | No | Yes | Yes |
+| XmlDictionaryReaderTest: IsSafeWithDtdProcessing | No | Yes | Yes |
+| XmlDictionaryReaderTest: IsSafeWithDtdProcessingAndUrlResolver | No | No | No |
 | XmlDocumentTest: IsSafeByDefault | No | Yes | Yes |
 | XmlDocumentTest: IsSafeWithNullXmlResolver | Yes | Yes | Yes |
 | XmlDocumentTest: IsSafeWithUrlResolver | No | No | No |

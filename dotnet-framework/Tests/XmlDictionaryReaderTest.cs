@@ -27,7 +27,6 @@ namespace DotNetFrameworkXxeTests.Tests
         {
             XmlReaderSettings settings = new XmlReaderSettings();
             settings.DtdProcessing = DtdProcessing.Parse;
-            settings.XmlResolver = new XmlUrlResolver();
             XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.ASCII.GetBytes(Util.XmlWithPayload)), settings, Util.ResourceFolderPath);
             XmlDictionaryReader target = XmlDictionaryReader.CreateDictionaryReader(reader);
             string stringifiedTarget = ToString(target);
@@ -39,6 +38,7 @@ namespace DotNetFrameworkXxeTests.Tests
         {
             XmlReaderSettings settings = new XmlReaderSettings();
             settings.DtdProcessing = DtdProcessing.Parse;
+            settings.XmlResolver = new XmlUrlResolver();
             XmlReader reader = XmlReader.Create(new MemoryStream(Encoding.ASCII.GetBytes(Util.XmlWithPayload)), settings, Util.ResourceFolderPath);
             XmlDictionaryReader target = XmlDictionaryReader.CreateDictionaryReader(reader);
             string stringifiedTarget = ToString(target);
